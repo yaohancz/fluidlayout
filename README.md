@@ -4,5 +4,5 @@ This application is created by Yaohan C. Zais to demonstrate:
 - MVC pattern
 
 Screenshot:
-![alt tag](http://url/to/img.png)
-![alt tag](http://url/to/img.png)
+![alt tag](https://github.com/yaohancz/fluidlayout/blob/master/screenshot%201.PNG)
+![alt tag](https://github.com/yaohancz/fluidlayout/blob/master/screenshot%202.PNG)
