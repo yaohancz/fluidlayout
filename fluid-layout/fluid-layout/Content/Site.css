@@ -29,6 +29,10 @@ hr.vertical
     }                      
 }
 
+.message {
+    font-size: 12px;
+    color: white;
+}
 
 .table-row{
     display: table;

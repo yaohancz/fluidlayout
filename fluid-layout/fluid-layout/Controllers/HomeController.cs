@@ -21,7 +21,7 @@ namespace fluid_layout.Controllers
         public ActionResult Index(string email)
         {
             FluidModels model = new FluidModels();
-            model.SignUpText = "SIGN UP FOR DEALS, LATEST NEWS & MORE";
+            model.SignUpText = "SIGN UP FOR DEALS,\r\nLATEST NEWS & MORE";
             model.Email = email;
 
             return View(model);

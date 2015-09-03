@@ -4,6 +4,13 @@
     ViewBag.Title = "Fluid Layout";
 }
 <div>
+    @if(Model.Email != null)
+    {
+        <div class ="message">
+            @Model.Email has been registered successfully!
+        </div>
+    }
+
     @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "myForm" }))
     {
         <div class="row table-row">
@@ -15,7 +22,7 @@
                 <input class="email" type="text" name="email" placeholder="ENTER YOUR EMAIL ADDRESS">
             </div>
             <div class="col-xs-2 col-lg-2 table-cell">
-                <button type="button" class="btn btn-sign-up">SIGN UP</button>
+                <button type="submit" class="btn btn-sign-up">SIGN UP</button>
             </div>
             <div class="col-lg-2 table-cell"></div>
         </div>
