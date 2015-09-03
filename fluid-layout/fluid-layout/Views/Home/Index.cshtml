@@ -1,0 +1,23 @@
+﻿@model fluid_layout.Models.FluidModels
+
+@{
+    ViewBag.Title = "Fluid Layout";
+}
+<div>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "myForm" }))
+    {
+        <div class="row table-row">
+            <div class="col-lg-2 table-cell"></div>
+            <div class="col-xs-3 col-lg-2 table-cell ">
+                <span class="signUpText show-right-border">@Model.SignUpText</span> 
+            </div>
+            <div class="col-xs-7 col-lg-4 table-cell">
+                <input class="email" type="text" name="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+            </div>
+            <div class="col-xs-2 col-lg-2 table-cell">
+                <button type="button" class="btn btn-sign-up">SIGN UP</button>
+            </div>
+            <div class="col-lg-2 table-cell"></div>
+        </div>
+    }
+</div>
