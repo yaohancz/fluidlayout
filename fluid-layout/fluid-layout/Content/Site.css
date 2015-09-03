@@ -2,29 +2,55 @@
     background-color: #e2e2e2;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-.container span {
-    display: table-cell;
-    vertical-align: middle;
+.left-centered {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  padding: 1em;
+  background: black;
+  color: white;
+  vertical-align: middle;
+  float: none;
 }
-
-hr.vertical
-{
-   width: 0px;
-   height: 20px; /* or height in PX */
-    float: right;
-    background-color: grey;
-} 
+.centered {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding: 1em;
+  background: black;
+  color: white;
+  vertical-align: middle;
+  float: none;
+}.right-centered {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  padding: 1em;
+  background: black;
+  color: white;
+  vertical-align: middle;
+  float: none;
+}
 
 @media(min-width: 900px) {
-    .row {
+    #myForm {
         height: 100px;
+    }
+    #myForm:before{
+        /* Fake (pseudo) element, that enables vertical-align */
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+
     }                      
 }
 
 @media(min-width: 1200px) {
-    .row {
+    #myForm {
         height: 200px;
     }                      
 }
@@ -45,7 +71,7 @@ hr.vertical
     float: none;
 }
 .email {
-    width: 90%;
+    width: 100%;
     display: block;
     vertical-align: middle;
     float: none;
@@ -55,11 +81,13 @@ hr.vertical
 .signUpText {
     color: white;
     white-space: pre-wrap;
-    display: block;
+    display: inline-block;
+    text-align: left;
     vertical-align: middle;
     float: none;
     font-size: 12px;
     font-weight: bold;
+    width: 100%;
 }
 
 .show-right-border {
